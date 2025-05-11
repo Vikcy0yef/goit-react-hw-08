@@ -24,11 +24,11 @@ const LoginForm = () => {
       {({ isSubmitting }) => (
         <Form className={s.form}>
           <label htmlFor="email">Email</label>
-          <Field name="email" type="email" placeholder="Enter your email" />
+          <Field id="email" name="email" type="email" placeholder="Enter your email" />
           <ErrorMessage name="email" component="div" className={s.error} />
 
           <label htmlFor="password">Password</label>
-          <Field name="password" type="password" placeholder="Enter your password" />
+          <Field id="password" name="password" type="password" placeholder="Enter your password" />
           <ErrorMessage name="password" component="div" className={s.error} />
 
           <button className={s.button} type="submit" disabled={isSubmitting}>
