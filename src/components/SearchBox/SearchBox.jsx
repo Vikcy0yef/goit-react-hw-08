@@ -1,7 +1,8 @@
 import React from 'react'
 import { useId } from "react";
 import { useDispatch } from "react-redux";
-import { changeFilter } from "../../redux/filtersSlice";
+import { setFilter } from "../../redux/filters/slice"; 
+
 import s from "./SearchBox.module.css"
 
 const SearchBox = () => {
@@ -10,7 +11,7 @@ const SearchBox = () => {
   const dispath = useDispatch();
 
   const onFilter = (filter) => {
-    dispath(changeFilter(filter));
+    dispath(setFilter(filter));
   };
 
   return (

@@ -24,6 +24,11 @@
 
 }
 
+.ediForm{
+    display: flex;
+    flex-direction: column;
+}
+
 .button {
     width: 40px;
     height: 20px;
@@ -31,6 +36,19 @@
     margin-left: 10px;
     margin-top: 5px;
     padding: 0;
+    background-color: blue;
+    color: beige;
+    
+}
 
-
+.but{
+    background-color: #1313ab;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: background-color 0.3s;
+        margin-top: 10px;
 }

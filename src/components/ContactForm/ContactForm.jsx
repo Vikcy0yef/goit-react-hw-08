@@ -2,8 +2,10 @@ import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../redux/contactsOps';
 import s from './ContactForm.module.css';
+import { addContact } from "../../redux/contacts/operations";
+
+
 
 const validationSchema = Yup.object({
   name: Yup.string().min(3).max(50).required('Name is required'),
